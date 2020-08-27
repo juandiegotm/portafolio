@@ -1,0 +1,14 @@
+.jumbotron {
+    height: 100vh;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* Imagenes para la sección de parallax*/
+.paralsec {
+    background-image: url('./assets/ascension.jpg');
+    background-size: cover;
+}
+
+
