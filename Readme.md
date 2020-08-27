@@ -1,4 +1,4 @@
-#Juandiegotm's portafolio
+# Juandiegotm's portafolio
 
 Welcome to my personal page. Here you will fine information about me, some projects, hobbies and my academic Life
 
