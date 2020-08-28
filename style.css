@@ -1,16 +1,87 @@
+/* Imagenes para la sección de parallax*/
+
 .jumbotron {
-    height: 100vh;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 0 !important;
 }
 
+/* 
+    Sections
+*/
 
-/* Imagenes para la sección de parallax*/
 .paralsec {
+    height: 100vh;
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)), url('./assets/banner.jpg');
     background-size: cover;
+    background-position: right center;
+}
+
+.about {
+    height: 100vh;
+    background-color: #FAEBD7;
+    padding: 0 !important
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;  
+}
+
+.about .col
+{
+    width: 100vh;
+}
+
+.about img {
+    max-width: 100%;
+    flex: 1;
+}
+
+.experience .container {
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.experience h2 {
+    font-size: 4rem;
+    text-align: center;;
+}
+
+.paralsec h2 {
+    font-size: 4rem;
+    text-align: left;;
+}
+
+.paralsec p {
+    text-align: left;
+}
+
+.card {
+    padding: 10px;
+    border-top: 10px;
+}
+
+/* Footer */
+
+footer {
+	background-color: black;
+	height: 50%;
+    color: white;
+    padding: 15px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+}
+
+footer-copyright {
+    text-align: center;
+    align-content: center;
 }
 
 

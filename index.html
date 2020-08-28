@@ -8,9 +8,11 @@
 
         <!-- Se incluye bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/1fb2841ea0.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
@@ -24,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#bienvenida">Welcome</a>
+                        <a class="nav-link" href="#welcome">Welcome</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#biografia">Bibliografy</a>
+                        <a class="nav-link" href="#about">About me</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#academia">Academy</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#interes">Interests</a>
@@ -42,173 +44,115 @@
             </div>
         </nav>
 
-        <!-- Primera sección parallax-->
-        <div class="jumbotron jumbotron-fluid paralsec" >
-            <div class="container">
-              <h1 class="display-4">Fluid jumbotron</h1>
-              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            </div>
-          </div>
+        <!-- Welcome section -->
+        <section id="welcome" >
+            <div class="jumbotron jumbotron-fluid paralsec" >
+                <div class="text-white py-5 px-4">
+                    <div>
+                      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">Developver, Catholic and Gamer</h2>
+                      <p class="mx-5 mb-5">I came that they may have life and have it abundantly. John 10, 10.</p>
+                    </div>
+                  </div>
+              </div>
+        </section>
 
-          
-        <!-- Primera sección parallax-->
-        <div class="jumbotron jumbotron-fluid paralsec2">
-            <div class="container">
-              <h1 class="display-4">Fluid jumbotron</h1>
-              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <!-- About me -->
+        <!-- <section id="about">
+            <div class="jumbotron jumbotron-fluid about" >
+                <div class="container">
+                    <div class="row about">
+                        <div class="col info">
+                            <div class="text-black py-5 px-4">
+                                Hola
+                            </div>
+                        </div>
+                        <div class="col image">
+                            <img src="./assets/foto.jpg" alt="Foto de Juan Diego Trujillo Montoya">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section> -->
+
+        <section id="projects">
+            <div class="jumbotron jumbotron-fluid experience">
+                <h2 class="h1-responsive pt-3 mb-5 font-bold">My projects</h2>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/concilium.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Consilium</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="http://www.consiliumcol.org/candidatosPresidenciales/2018" target="_blank" class="btn btn-primary">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/arkangelai.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Arkangelai</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="https://www.arkangelai.com/" target="_blank" class="btn btn-primary">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/ecoempaques.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Ecoempaques</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     
-        <section id="bienvenida">
-            <h2>Bienvenida</h2>
-            <p> ¡Hola! Bienvenido a mi pagina web personal. Inicialmente es una tarea, pero espero pronto poder converitirla en un portafolio profesional.
-                <br> Espero poder disfrutar al máximo al curso y convertirme en un buen desarrollador <strong>Full Stack</strong>. 
-            </p>
-        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 py-5 social">
+                            <!-- Facebook -->
+                            <a class="fb-ic" href="https://web.facebook.com/juancho.trujillomontoya" target="_blank">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                            </a>
 
-        <section id="biografia">
-            <h2>Datos biográficos</h2>
-            <table>
-                <tr>
-                    <td><strong>Fecha de nacimiento</strong></td>
-                    <td>16/02/1999</td>
-                </tr>
-                <tr>
-                    <td><strong>Lugar de nacimiento</strong></td>
-                    <td>Alpujarra (Tolima)</td>
-                </tr>
-                <tr>
-                    <td><strong>Edad</strong></td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td><strong>Género</strong></td>
-                    <td>Masculino</td>
-                </tr>
-                <tr>
-                    <td><strong>Creencias</strong></td>
-                    <td>Católico</td>
-                </tr>
-                
-            </table>
-        </section>
+                            <!-- Twitter -->
+                            <a class="fb-ic" href="https://twitter.com/juandiegotm1999" target="_blank">
+                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                            </a>
 
-        <section id="academia">
-            <h2>Datos académicos</h2>
-            <ul>
-                <li><strong>Bachillerato:</strong> Colegio tolimense <em>(2015)</em></li>
-                <li><strong>Educación Superior:</strong></em>
-                <ul>
-                    <li>
-                        Ingeniería de Sistemas y Computación en Universidad de Los Andes <em> (2016) - Actualidad</em>
-                    </li>
-                    <li>
-                        Ciencias de la Computación en Universidad Nacional de Colombia <em> (2020) - Actualidad </em>
-                    </li>
-                </ul>
-                </li>
-            </ul>
-        </section>
+                            <!--Linkedin -->
+                            <a class="li-ic" href="https://www.linkedin.com/in/juandiegotrujillomontoya/" target="_blank">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic" href="https://www.instagram.com/juandiegotm1999/" target="_blank">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
 
-    <section id="interes">
-        <h2>Sitios de interés</h2>
-        <ol>
-            <li>
-                <h3>Videos favoritos</h3>
-                <ul>
-                    <li>
-                        <h3>Indie Game: The Movie Official Trailer</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dINgx0y4GqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p> Aún recuerdo cuando vi por primera vez este documental. La piel se me erizaba de solo ver como hablaban 
-                            <br> apasionadamente los desarrolladores a cerca de su labor. Sin duda, es algo que me inspirta.</p>
-                    </li>
-                    <li>
-                        <h3>Viva la vida - Coldplay</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dvgZkm1xWPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p> Ha sido mi banda favorita desde los 10 años. Esta fue una de las primeras canciones que escuché de ellos y no me canso de oirla.</p>
-                    </li>
-                    <li>
-                        <h3> Trailer de Dios No Esta Muerto</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CvWBGANEXps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p> Soy cristiano catolico; esta película fue una de las primeras que vi de esta género y cada vez que la veo 
-                            <br> me inspira a estar orgulloso de serlo. 
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3> Enlaces de interés </h3>
-                <ul>
-                    <li>
-                        <h4><a href="https://sinmedida.uniandes.edu.co/" target="_blank">Página web de Sin Medida</a></h4>
-                        <p>Es el circulo de participación al que pertenezco. Es un grupo interuniversitario católico.</p>
-                    </li>
-                    <li>
-                        <h4><a href="https://www.3djuegos.com/" target="_blank">Noticias de 3DJuegos</a></h4>
-                        <p>Un portal de noticias que suelo visitar para enterarme de las últimas noticias del mundo de los videojuegos.</p>
-                    </li>
-                    <li>
-                        <h4><a href="https://medium.com/" target="_blank">Medium!</a></h4>
-                        <p>Tengo cierta obsesión con los blogs que se publican en Medium: como desarrolladores, hay mucha información util.</p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3> Imágenes </h3>
-                <ul>
-                    <li>
-                        <h4> El rostro real de Jesús </h4>
-                        <img src="./assets/jesus.jpg" height="400px">
-                        <p> Hay una chica que aseguró haber visto a Jesus en una revelación que tuvo y luego de ello lo retrató. <a target="_blank" href="https://www.guioteca.com/fenomenos-paranormales/akiane-kramarik-la-nina-que-aseguro-haber-visto-a-jesus-y-pinto-su-verdadero-rostro/#:~:text=Fen%C3%B3menos%20Paranormales-,Akiane%20Kramarik%2C%20la%20ni%C3%B1a%20que%20asegur%C3%B3%20haber%20visto%20a,y%20pint%C3%B3%20%E2%80%9Csu%20verdadero%20rostro%E2%80%9D&text=Akiane%20Kramarik.,su%20mensaje%20a%20la%20humanidad." >Aquí</a> hay más info al respecto</p>
-                    </li>
-                    <li>
-                        <h4> La epoca dorada de Disney </h4>
-                        <img src="./assets/disney.jpg" height="400px">
-                        <p> Recuerdo con mucho cariño esta epoca de series de Disney. Gran parte de mi infancia está allí.</p>
-                    </li>
-                    <li>
-                        <h4> The legend of Zelda: The breath of the wild</h4>
-                        <img src="./assets/link.jpg" height="400px">
-                        <p> Un videojuego que disfruté como ningun otro.</p>
-                    </li>
-                </ul>
-            </li>
-        </ol>
-    </section>
-
-    <section id="contacto">
-        <h2> Contactame </h2>
-        <form action="" method="post">
-            <ul>
-                <li>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" name="user_email">
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Enviar</button>
-                </li>
-            </ul>
-        </form>
-    </section>
-
-    <hr>
-
-    <footer>    
-        <p> Puedes escribirme a mi correo <a href="mailto:jd.trujillom@uniandes.edu.co">jd.trujillom@uniandes.edu.co</a> o buscame en mis redes sociales</p>
-        <ul>
-            <li><a href="https://www.facebook.com/juancho.trujillomontoya">Facebook</a></li>
-            <li><a href="https://twitter.com/juandiegotm1999">Twitter</a></li>
-            <li><a href="https://www.instagram.com/juandiegotm1999/">Instagram</a></li>
-        </ul>
-    </footer>
-
+                            <!--Youtube-->
+                            <a class="ins-ic" href="https://www.youtube.com/channel/UCGFu8uqKjvue5jCoKReH8AA?view_as=subscriber" target="_blank">
+                                <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x" > </i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2020 Copyright
+                <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+                </div>
+                <!-- Copyright -->
+        </footer>
     </body>
 </html>
