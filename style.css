@@ -1,87 +1,89 @@
 /* Imagenes para la sección de parallax*/
 
 .jumbotron {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* 
     Sections
 */
 
-.paralsec {
-    height: 100vh;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)), url('./assets/banner.jpg');
-    background-size: cover;
-    background-position: right center;
+/*
+    Considero que, en general, las reglas estan bien nombradas y son claras. 
+    La única que no comprendo el nombre es la de paralsec, que me toco hacer un ctrl f para saber donde se usaba, pero las demás fueron muy claras.
+    Le hice un pequeño cambio para que se llamara "header".
+*/
+
+.header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/banner.jpg");
+  background-size: cover;
+  background-position: right center;
 }
 
 .about {
-    height: 100vh;
-    background-color: #FAEBD7;
-    padding: 0 !important
+  height: 100vh;
+  background-color: #faebd7;
+  padding: 0 !important;
 }
 
 .about .container {
-    display: flex;
-    justify-content: center;  
+  display: flex;
+  justify-content: center;
 }
 
-.about .col
-{
-    width: 100vh;
+.about .col {
+  width: 100vh;
 }
 
 .about img {
-    max-width: 100%;
-    flex: 1;
+  max-width: 100%;
+  flex: 1;
 }
 
 .experience .container {
-    min-height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: baseline;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .experience h2 {
-    font-size: 4rem;
-    text-align: center;;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .paralsec h2 {
-    font-size: 4rem;
-    text-align: left;;
+  font-size: 4rem;
+  text-align: left;
 }
 
 .paralsec p {
-    text-align: left;
+  text-align: left;
 }
 
 .card {
-    padding: 10px;
-    border-top: 10px;
+  padding: 10px;
+  border-top: 10px;
 }
 
 /* Footer */
 
 footer {
-	background-color: black;
-	height: 50%;
-    color: white;
-    padding: 15px;
+  background-color: black;
+  height: 50%;
+  color: white;
+  padding: 15px;
 }
 
 footer .social {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer-copyright {
-    text-align: center;
-    align-content: center;
+  text-align: center;
+  align-content: center;
 }
-
-
