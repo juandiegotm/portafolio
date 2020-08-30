@@ -10,4 +10,4 @@ Hope you enjoy :)
 aesthetically. Code is well documented and clear. I wrote some comments on both, the html and css files, and made a small change on each.
 Very good job! I really liked it!--
 
-![Code check](https://ibb.co/QmwkBj3)
+![Code check](/assets/codecheck.png)
