@@ -60,3 +60,8 @@
                 })
         })
 }(jQuery);
+
+const div = document.querySelector('.window')
+setTimeout(()=>{
+    div.classList.toggle('clip')
+}, 500);

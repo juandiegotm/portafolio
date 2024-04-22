@@ -127,9 +127,6 @@ header.sticky {
 .lead-content {
     position: absolute;
     z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: left;
 }
 
@@ -139,11 +136,16 @@ header.sticky {
         width: 0;
     }
 
+    1% {
+        opacity: 1;
+    }
+
     99.9% {
         border-right: .15em solid black;
     }
 
     100% {
+        opacity: 1;
         border: none;
     }
 }
@@ -153,12 +155,17 @@ header.sticky {
         width: 0;
     }
 
+    1% {
+        opacity: 1;
+    }
+
     99.9% {
         border-right: .15em solid black;
     }
 
     100% {
         border: none;
+        opacity: 1;
     }
 }
 
@@ -252,6 +259,7 @@ header.sticky {
 .credentials h1 {
     width: 17em;
     color: #40798C;
+    opacity: 0;
     font-weight: 900;
     margin-top: 40px;
     margin-left: 20px;
@@ -259,12 +267,14 @@ header.sticky {
     text-transform: uppercase;
     -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
+    -webkit-animation-delay: 3.3s;
+    animation-delay: 3.3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .credentials h2 {
-    width: 13em;
+    width: 14em;
     color: #1F363D;
     font-weight: 500;
     font-size: 1.5em;
@@ -273,22 +283,22 @@ header.sticky {
     opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
     animation: type2 2s steps(40, end);
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 5.3s;
+    animation-delay: 5.3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .cv-link {
     text-decoration: underline;
-    width: 9.5em;
+    width: 9.2em;
     color: blue;
     margin-left: 20px;
     opacity: 0;
     -webkit-animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
     animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+    -webkit-animation-delay: 7.3s;
+    animation-delay: 7.3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
