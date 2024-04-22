@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="macos.css">
     <title>Juandiegotm</title>
 
     <!-- Se incluye Awasome Icons -->
@@ -23,10 +24,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="style.css">
+        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="portfolio.js"></script>
+    <script src="genie-effect.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,6 @@
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa-solid fa-bars"></i>
     </div>
-
 
     <header>
         <div id="mobile-menu-close">
@@ -72,22 +72,43 @@
         </ul>
     </header>
 
-
     <!-- Welcome section -->
     <section id="welcome">
         <div class="lead">
+
             <div class="lead-content">
-                <h1>Juan Diego Trujillo Montoya</h1>
-                <h2>Backend Developer</h2>
-                <a href="#" class="btn-rounded-white">Download Resume</a>
+
+                <div class="page">
+                    <div class="titlebar">
+                        <div class="dot close"></div>
+                        <div class="dot minimise"></div>
+                        <div class="dot maximise"></div>
+                    </div>
+                    
+                    <div class="credentials">
+                        <h1 class="typewrited">Juan Diego Trujillo Montoya</h1>
+                        <h2 class="typewrited">Position: Backend Developer</h2>
+                        <a title="CV Juan Diego Trujillo" href="./assets/Resume_english_JuanDiegoTrujillo.pdf"><p class="cv-link typewrited">&gt Download Resume</p></a>
+                    </div>
+                </div>
+                <div class="spacer"></div>
             </div>
+
         </div>
-        <div id="lead-overlay"></div>
         <div id="lead-down">
-            <span>
+            <!-- <img src="./assets/fondo dev_new.gif" alt=""> -->
+            <!-- <span>
                 <i class="fa-solid fa-chevron-down fa-beat-fade"></i>
-            </span>
+            </span> -->
         </div>
+        <!-- <div id="lead-right-down">
+            <div>
+                <img id="window" src="./assets/cat-background.png" alt="Cat in a window">
+            </div>
+            <div>
+                <img id="programmer" src="./assets/programming.gif" alt="Computer man">
+            </div>
+        </div> -->
     </section>
 
     <!-- About me -->
@@ -112,5 +133,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Experience -->
+    <section id="projects">
+        <div class="container" style="text-align: center;">
+            <h2 class="heading">Projects</h2>
+        </div>
+    </section>
 </body>
+
 </html>

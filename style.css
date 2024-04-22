@@ -1,11 +1,13 @@
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px
+@font-face {
+    font-family: 'San Francisco';
+    src: url('path-to-font/SanFrancisco-Regular.woff2') format('woff2'),
+        url('path-to-font/SanFrancisco-Regular.woff') format('woff');
+    /* Agrega las demás variantes de la fuente si las necesitas */
 }
 
-body.active {
-    overflow: hidden;
-    z-index: -1
+body {
+    font-family: 'San Francisco', sans-serif;
+    font-size: 16;
 }
 
 @keyframes dropHeader {
@@ -114,14 +116,12 @@ header.sticky {
 }
 
 .lead {
-    position: relative;
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(./assets/banner.jpg);
-    background-size: cover;
     padding: 15px;
     overflow: hidden;
+    background-color: #f2f2f2;
 }
 
 .lead-content {
@@ -130,32 +130,167 @@ header.sticky {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 }
 
-.lead-content h1 {
-    color: #fff;
+/* The typing effect */
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid black;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: .15em solid black;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: .15em solid black;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: .15em solid black;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}
+
+.typewrited {
+    overflow: hidden;
+    /* Asegura que el contenido no se revele hasta la animación */
+    border-right: .15em solid black;
+    /* Cursor de la máquina de escribir */
+    white-space: nowrap;
+    /* Mantiene el contenido en una sola línea */
+}
+
+.credentials h1 {
+    width: 17em;
+    color: #40798C;
     font-weight: 900;
-    font-size: 3em;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1.8em;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 0.9em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
-.lead-content h2 {
-    color: #a0cfee;
+.credentials h2 {
+    width: 13em;
+    color: #1F363D;
     font-weight: 500;
-    font-size: 2.25em;
+    font-size: 1.5em;
     margin-bottom: 15px;
+    margin-left: 20px;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
-.btn-rounded-white {
-    display: inline-block;
-    color: #fff;
-    padding: 15px 25px;
-    border: 3px solid #fff;
-    border-radius: 30px;
-    transition: .5s ease all
+.cv-link {
+    text-decoration: underline;
+    width: 9.5em;
+    color: blue;
+    margin-left: 20px;
+    opacity: 0;
+    -webkit-animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .btn-rounded-white:hover {
@@ -165,11 +300,11 @@ header.sticky {
 }
 
 .shadow {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
 
 .shadow-large {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.08),0 3px 6px rgba(0,0,0,0.15)
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15)
 }
 
 .heading {
@@ -192,34 +327,40 @@ header.sticky {
     background: #3498db
 }
 
-.background-alt {
-    background: #f2f2f5
-}
-
-#lead-overlay {
+#lead-right-down {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    background: rgba(33, 125, 187, 0.8);
-    z-index: 1;
+    width: 100%;
+    text-align: right;
 }
 
-#lead-down {
+#lead-right-down img {
+    object-fit: contain;
+}
+
+#programmer {
+    margin-right: 100px;
+    width: 120px;
+}
+
+#window {
+    margin-right: 300px;
+    width: 100px;
+}
+
+/* #lead-down {
     position: absolute;
     left: 0;
     right: 0;
-    width: 100%;
     text-align: center;
     z-index: 10;
-    bottom: 15px;
+    bottom: 0px;
     color: #fff;
-}
+} */
 
-#lead-down span {
+/* #lead-down span {
     cursor: pointer;
     display: block;
     margin: 0 auto;
@@ -232,11 +373,11 @@ header.sticky {
 
 #lead-down i {
     padding-top: 7px;
-}
+} */
 
 #about {
-    padding: 75px 15px;
-    border-bottom: 1px solid #dcd9d9
+    padding: 75px 5px;
+    /*border-bottom: 1px solid #dcd9d9*/
 }
 
 #about h2 {
@@ -246,32 +387,6 @@ header.sticky {
 #about p {
     color: #74808a;
     margin: 0
-}
-
-
-@media only screen and (max-width: 750px) {
-
-    #experience-timeline:before,
-    #experience-timeline:after {
-        left: 23px
-    }
-
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px
-    }
-
-    .vtimeline-icon {
-        margin-left: 0
-    }
-
-    .vtimeline-content {
-        margin-left: 70px
-    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -303,6 +418,31 @@ header.sticky {
 
     #about p {
         text-align: left
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    #experience-timeline:before,
+    #experience-timeline:after {
+        left: 23px
+    }
+
+    .vtimeline-date {
+        width: auto;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: 70px
+    }
+
+    .vtimeline-icon {
+        margin-left: 0
+    }
+
+    .vtimeline-content {
+        margin-left: 70px
     }
 }
 
@@ -348,6 +488,10 @@ header.sticky {
 
     #lead-down {
         display: none
+    }
+
+    #lead-right-down {
+        text-align: center;
     }
 
     .education-block h3,
